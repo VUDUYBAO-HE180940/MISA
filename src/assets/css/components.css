@@ -1,0 +1,676 @@
+/* ===== CSS khu vuc content tong ===== */
+.content {
+    background-color: #e5e7eb;
+    padding: 12px;
+}
+
+.content__panel {
+    flex: 1;
+    min-height: 0;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== CSS header (title + button + icon trong header) ===== */
+.content__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 12px 4px;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.content__header__left {
+    flex: 1;
+}
+
+.content__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.content__header__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__icon--remove {
+    width: 18px;
+    height: 18px;
+    border: 1.8px solid #6b7280;
+    border-radius: 50%;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.btn__icon--remove::after {
+    content: "x";
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+    color: #6b7280;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn__icon--plus {
+    font-size: 20px;
+    line-height: 1;
+    margin-top: -1px;
+}
+
+.btn__icon--caret {
+    margin-left: 4px;
+    font-size: 10px;
+}
+
+/* ===== CSS button hanh dong o header ===== */
+.content__btn__secondary {
+    padding: 8px 14px;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #111827;
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content__btn__secondary:hover {
+    background-color: #f9fafb;
+}
+
+.content__btn__primary {
+    padding: 8px 12px;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.content__btn__primary:hover {
+    background-color: #1d4ed8;
+}
+
+.content__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-bottom: 1px solid #d1d5db;
+    background-color: #ffffff;
+    gap: 16px;
+}
+
+.content__search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 390px;
+    height: 40px;
+    border: 1px solid #c6cad1;
+    border-radius: 6px;
+    padding: 0 14px;
+    background-color: #fff;
+    gap: 10px;
+}
+
+.content__search__icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.content__search__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #4b5563;
+    background: transparent;
+}
+
+.content__search__input::placeholder {
+    color: #5d6674;
+}
+
+.content__actions {
+    display: flex;
+    gap: 10px;
+}
+
+.content__action__btn {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #c6cad1;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #6b7280;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.content__action__btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.content__action__btn:hover {
+    background-color: #f9fafb;
+}
+
+/* ===== CSS than noi dung va khung chua bang ===== */
+.content__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    background-color: #ffffff;
+}
+
+.content__body__container {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== CSS bang du lieu ung vien ===== */
+.table__wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.content__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.content__table thead {
+    background-color: #f9fafb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.content__table th {
+    height: 58px;
+    padding: 0 16px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+    font-weight: 600;
+    color: #111827;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.content__table td {
+    height: 58px;
+    padding: 0 16px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+    color: #1f2937;
+}
+
+.content__table tbody tr:hover {
+    background-color: #dceaf8;
+}
+
+.content__table thead th:last-child,
+.content__table tbody td:last-child {
+    position: sticky;
+    right: 0;
+    box-shadow: -8px 0 12px -12px rgba(17, 24, 39, 0.4);
+}
+
+.content__table thead th:last-child {
+    z-index: 12;
+    background-color: #f9fafb;
+}
+
+.content__table tbody td:last-child {
+    z-index: 6;
+    background-color: #ffffff;
+}
+
+.content__table tbody tr:hover td:last-child {
+    background-color: #dceaf8;
+}
+
+.content__table tbody tr:hover td:last-child .action__btns {
+    opacity: 1;
+}
+
+.col__action,
+.col__action__cell {
+    width: 54px;
+    min-width: 54px;
+    max-width: 54px;
+    text-align: center;
+    padding: 0 8px;
+}
+
+.row__edit__btn {
+    width: 18px;
+    height: 18px;
+    border: none;
+    padding: 0;
+    background-color: #6b7280;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: opacity 0.15s ease, transform 0.15s ease, background-color 0.15s ease;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm2.92 2.33h-.84v-.84l8.8-8.8.84.84-8.8 8.8zM20.71 7.04a1 1 0 0 0 0-1.41L18.37 3.3a1 1 0 0 0-1.41 0l-1.67 1.67 3.75 3.75 1.67-1.68z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.row__del__btn {
+    width: 18px;
+    height: 18px;
+    border: none;
+    padding: 0;
+    background-color: #6b7280;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: opacity 0.15s ease, transform 0.15s ease, background-color 0.15s ease;
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M9 3h6l1 2h4v2H4V5h4l1-2zm1 6h2v8h-2V9zm4 0h2v8h-2V9zM7 9h2v8H7V9z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.col__action__cell .action__btns {
+    opacity: 0;
+    display: flex;
+    gap: 4px;
+}
+
+/* ===== CSS do rong cot + thanh phan hien thi trong o ===== */
+.col__checkbox {
+    min-width: 60px;
+}
+
+.col__fullname {
+    min-width: 250px;
+}
+
+.col__phone {
+    min-width: 150px;
+}
+
+.col__email {
+    min-width: 220px;
+}
+
+.col__campaign {
+    min-width: 230px;
+}
+
+.col__position {
+    min-width: 220px;
+}
+
+.col__job {
+    min-width: 220px;
+}
+
+.col__danhgia {
+    min-width: 150px;
+}
+
+.col__donvisd {
+    min-width: 180px;
+}
+
+.rating-stars {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2px;
+}
+
+.rating-star {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+    color: #d1d5db;
+    cursor: pointer;
+}
+
+.rating-star.is-active {
+    color: #fbbf24;
+}
+
+.rating-star:hover,
+.rating-star:hover ~ .rating-star {
+    color: #fbbf24;
+}
+
+.pagination__btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.candidate__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.candidate__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #22a7e2;
+    color: #fff;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.candidate__name {
+    color: #1f2937;
+    line-height: 1.35;
+}
+
+.candidate__status {
+    color: #17a34a;
+    line-height: 1.2;
+}
+
+/* ===== CSS footer + pagination ===== */
+.content__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.content__footer__left {
+    flex: 1;
+}
+
+.content__total {
+    color: #374151;
+}
+
+.content__total strong {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.content__footer__right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.content__pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pagination__text {
+    color: #6b7280;
+}
+
+.pagination__select,
+.pagination__input {
+    padding: 6px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #374151;
+}
+
+.pagination__select {
+    min-width: 50px;
+}
+
+.pagination__input {
+    width: 40px;
+    text-align: center;
+}
+
+.pagination__current,
+.pagination__total {
+    color: #374151;
+}
+
+.pagination__controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pagination__btn {
+    padding: 4px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background-color: white;
+    color: #374151;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.pagination__btn:hover:not(:disabled) {
+    background-color: #f9fafb;
+}
+
+.pagination__btn--prev,
+.pagination__btn--next {
+    min-width: 32px;
+    text-align: center;
+}
+
+/* ===== CSS override cho MS components ===== */
+
+/* MsButton trong content__btn__primary/secondary */
+.content__btn__primary.ms-button,
+.content__btn__secondary.ms-button {
+    padding: unset;
+    border-radius: unset;
+    font-size: unset;
+    background-color: unset;
+    color: unset;
+}
+
+.content__btn__primary.ms-button {
+    padding: 8px 12px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content__btn__primary.ms-button:hover:not(.ms-button--disabled) {
+    background-color: #1d4ed8;
+}
+
+.content__btn__secondary.ms-button {
+    padding: 8px 14px;
+    background-color: white;
+    color: #111827;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.content__btn__secondary.ms-button:hover:not(.ms-button--disabled) {
+    background-color: #f9fafb;
+}
+
+/* MsInput trong .content__search */
+.content__search .ms-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: #4b5563;
+    background: transparent;
+    padding: 0;
+}
+
+.content__search .ms-input::placeholder {
+    color: #5d6674;
+}
+
+.content__search .ms-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* MsButton trong .content__action__btn */
+.content__action__btn.ms-button {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid #c6cad1;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #6b7280;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__action__btn.ms-button:hover:not(.ms-button--disabled) {
+    background-color: #f9fafb;
+}
+
+.content__action__btn.ms-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* MsButton cho .row__edit__btn, .row__del__btn */
+.row__edit__btn.ms-button,
+.row__del__btn.ms-button {
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    border: none;
+    background-color: #6b7280;
+    border-radius: 0;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.row__edit__btn.ms-button {
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm2.92 2.33h-.84v-.84l8.8-8.8.84.84-8.8 8.8zM20.71 7.04a1 1 0 0 0 0-1.41L18.37 3.3a1 1 0 0 0-1.41 0l-1.67 1.67 3.75 3.75 1.67-1.68z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+.row__del__btn.ms-button {
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M9 3h6l1 2h4v2H4V5h4l1-2zm1 6h2v8h-2V9zm4 0h2v8h-2V9zM7 9h2v8H7V9z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+}
+
+/* MsSelect trong .pagination__select */
+.pagination__select.ms-select {
+    padding: 6px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #374151;
+    min-width: 50px;
+}
+
+/* MsInput trong .pagination__input */
+.pagination__input.ms-input {
+    padding: 6px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #374151;
+    width: 40px;
+    text-align: center;
+}
+
+/* MsButton trong .pagination__btn */
+.pagination__btn.ms-button {
+    padding: 4px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background-color: white;
+    color: #374151;
+    min-width: 32px;
+    text-align: center;
+}
+
+.pagination__btn.ms-button:hover:not(.ms-button--disabled) {
+    background-color: #f9fafb;
+}
+
+.pagination__btn--prev.ms-button,
+.pagination__btn--next.ms-button {
+    min-width: 32px;
+}
+
+/* MsCheckbox styles */
+.col__checkbox .ms-checkbox-wrapper,
+.content__table tbody td:first-child .ms-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ms-checkbox-wrapper {
+    cursor: pointer;
+}
+
+.ms-checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}

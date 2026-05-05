@@ -1,0 +1,59 @@
+* {
+    font-family: Inter, sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: InterVariable;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("InterVariable.woff2") format("woff2");
+}
+
+/* ===== Toast Notification ===== */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 16px 24px;
+    background-color: #10b981;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+    font-weight: 500;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: all 0.3s ease-in-out;
+}
+
+.toast--show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.toast--success {
+    background-color: #10b981;
+}
+
+.toast--error {
+    background-color: #ef4444;
+}
+
+.toast--warning {
+    background-color: #f59e0b;
+}
+
+.toast--info {
+    background-color: #3b82f6;
+}

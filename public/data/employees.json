@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "fullname": "Vũ Duy Bảo",
+    "phone": "0977000000",
+    "email": "baovu@example.com",
+    "campaign": "Tuyển dụng SA",
+    "position": "Lập Trình Viên",
+    "job": "Tuyển dụng SA",
+    "recruitmentRound": "--",
+    "rating": "--",
+    "dateApplied": "2026-05-01",
+    "source": "Website",
+    "educationLevel": "Cử nhân",
+    "educationSchool": "Đại học Bách Khoa",
+    "major": "CNTT",
+    "recentWorkplace": "Công ty XYZ",
+    "recruiter": "Đặng Thanh Nhàn",
+    "unit": "IT",
+    "status": "Nhân viên"
+  },
+  {
+    "id": 2,
+    "fullname": "Nguyễn Thị Lan",
+    "phone": "0909123456",
+    "email": "lanng@example.com",
+    "campaign": "Tuyển dụng SA",
+    "position": "Tester",
+    "job": "Tuyển dụng SA",
+    "recruitmentRound": "--",
+    "rating": "--",
+    "dateApplied": "2026-04-20",
+    "source": "LinkedIn",
+    "educationLevel": "Thạc sĩ",
+    "educationSchool": "Đại học Kinh tế",
+    "major": "Quản trị",
+    "recentWorkplace": "Công ty ABC",
+    "recruiter": "Trần Văn A",
+    "unit": "QA",
+    "status": "Ứng viên"
+  }
+]

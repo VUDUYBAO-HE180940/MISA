@@ -1,0 +1,176 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 48px;
+    background-color: white;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar__right__web:hover {
+    color: blue;
+}
+
+.navbar__right {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.navbar__cart {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar__cart__badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 999px;
+    background-color: #e61d2b;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    box-shadow: 0 0 0 2px #ffffff;
+}
+
+.navbar__right__web:hover .mi__icon__web {
+    background-color: blue;
+}
+
+.navbar__right__web {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+/* Style cho thanh sidebar */
+.sidebar__menu {
+    width: 100%;
+    height: calc(100% - 40px);
+    padding: 32px 12px;
+    color: white;
+}
+
+.sidebar__menu__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    color: #c5ccd5;
+}
+
+.sidebar__menu__item:not(.sidebar__menu__item--active):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar__menu__item--active {
+    background-color: #2680eb;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    top: 48px;
+    left: 233px;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.2s ease;
+}
+
+/* End style cho thanh sidebar */
+.sidebar {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    bottom: 0;
+    width: 233px;
+    background-color: #051529;
+    background-image: url('https://amisplatform.misacdn.net/apps/recruit2/event-sidebar.b836f9e63b28d1c0.png');
+    background-size: cover;
+    font-size: 14px;
+    transition: width 0.2s ease;
+}
+
+.sidebar__toggle {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.sidebar__bg {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+.toggle__border {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    justify-content: flex-start;
+    padding: 10px 20px 10px 0;
+    display: flex;
+    width: 90%;
+    gap: 8px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.sidebar__toggle__text {
+    color: white;
+}
+
+.sidebar--collapsed .sidebar {
+    width: 72px;
+}
+
+.sidebar--collapsed .content {
+    left: 72px;
+}
+
+.sidebar--collapsed .sidebar__menu__item {
+    justify-content: center;
+    padding: 8px;
+}
+
+.sidebar--collapsed .sidebar__menu__item > div:last-child {
+    display: none;
+}
+
+.sidebar--collapsed .toggle__border {
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.sidebar--collapsed .sidebar__toggle__text {
+    display: none;
+}
+
+.navbar__left__text {
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+

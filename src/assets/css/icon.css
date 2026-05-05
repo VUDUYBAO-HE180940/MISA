@@ -1,0 +1,230 @@
+.mi__icon__web {
+    width: 20px;
+    height: 20px;
+    mask-image: url("../images/ICON.svg");
+    mask-position: 0 -608px;
+    background-color: gray;
+}
+
+.mi__icon__agent {
+    width: 20px;
+    height: 20px;
+    background: url("https://amisplatform.misacdn.net/apps/recruit2/assets/icons/ava-recruitment.png");
+    background-size: cover;
+}
+
+.mi__icon__annoucement {
+    width: 20px;
+    height: 20px;
+    background: url('https://amisplatform.misacdn.net/apps/recruit/icon-notification-version.d5e3dc604036ed5b.svg');
+    background-size: cover;
+}
+
+.mi__icon__cart {
+    width: 20px;
+    height: 20px;
+    background: url(https://cdnstore.misacdn.net/lib/static/cs-icon-store.svg) no-repeat center;
+    background-size: cover;
+}
+
+.mi__icon__invite {
+    width: 20px;
+    height: 20px;
+    background: url(../images/invite.svg) no-repeat center;
+    mask-position: -1px -1px;
+    background-size: cover;
+}
+
+.mi__icon__message {
+    width: 20px;
+    height: 20px;
+    background: url(../images/message.svg) no-repeat center;
+    background-size: cover;
+}
+
+.mi__icon__notification {
+    width: 20px;
+    height: 20px;
+    background: url(../images/noti.svg) no-repeat center;
+    background-size: cover;
+}
+
+.mi__icon__question {
+    width: 20px;
+    height: 20px;
+    background: url(../images/question.svg) no-repeat center;
+    background-size: cover;
+}
+
+.mi__icon__information{
+    width: 20px;
+    height: 20px;
+    background: url(../images/more.svg) no-repeat center;
+    background-size: cover;
+}
+
+.mi__icon__help{
+    width: 20px;
+    height: 20px;
+    background: url(../images/help.svg) no-repeat center;
+    background-size: cover;
+}
+
+.mi__icon__account{
+    width: 30px;
+    height: 30px;
+    background: url(https://amisplatform.misacdn.net/APIS/PlatformAPI/api/Avatar/77b8feac-dfe5-4b47-b1ff-ac9a2eaced5a/LT0YJBOP.jpg?avatarID=03762a31-c8c5-45ae-887b-17bcdc47043b&width=64&height=64);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.sidebar__menu__item__icon__recruite {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -98px -114px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__candidate {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -26px -114px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__calendar {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -146px -114px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__potential {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -2px -114px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__campaign {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -74px -633px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__job {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -338px -114px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__aimarketing {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -162px -248px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__report {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -74px -114px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__setting {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -2px -138px;
+    mask-repeat: no-repeat;
+    background-color: #c5ccd5;
+}
+
+.sidebar__menu__item__icon__knowledge{
+    width: 20px;
+    height: 20px;
+    background-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/icons/icon-knowledge.svg");
+    background-size: cover;
+}
+.sidebar__toggle__icon {
+    width: 20px;
+    height: 20px;
+    mask-image: url("https://amisplatform.misacdn.net/apps/recruit2/assets/images/ICON.svg");
+    mask-position: -60px -696px;
+    mask-repeat: no-repeat;
+    background-color: #fff !important;
+}
+
+.navbar__left__decoration {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 48px;
+    width: 210px;
+    top: 0;
+    z-index: 2;
+    background-image: url(../images/sakura.png);
+    background-size: cover;
+}
+
+.navbar__left {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    width: 300px;
+}
+
+.navbar__left__bg {
+    background-image: url(https://amisplatform.misacdn.net/apps/recruit2/navbar-bg-event.7d974ba87d2e462e.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    width: 100%;
+    height: 48px;
+}
+
+.navbar__left__icon__more {
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/ninedot.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.navbar__left__icon__more:hover {
+    background-color: rgba(17, 24, 39, 0.06);
+}
+
+.navbar__left__icon__logo {
+    width: 32px;
+    height: 32px;
+    background-image: url('https://amisplatform.misacdn.net/apps/recruit2/logo-recruitment-new.d56a0096f9a2229b.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

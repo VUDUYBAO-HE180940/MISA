@@ -1,0 +1,9 @@
+/*Nhúng các file CSS dùng chung */
+@import url(./common.css);
+@import url(./layout.css);
+/*Nhúng file icon*/
+@import url(./icon.css);
+/*Nhúng css trang*/
+@import url(./pages/employees.css);
+@import url(./pages/form.css);
+/*nhúng các css control*/
