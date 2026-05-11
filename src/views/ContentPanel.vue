@@ -2,7 +2,7 @@
 	<div class="content__panel">
 		<slot>
 			<ContentToolbar />
-			<CandidateTable />
+			<CandidateTable :candidates="candidates" />
 		</slot>
 	</div>
 </template>
@@ -13,6 +13,12 @@ import CandidateTable from './CandidateTable.vue';
 
 export default {
 	name: 'ContentPanel',
+	props: {
+		candidates: {
+			type: Array,
+			default: () => [],
+		},
+	},
 	components: {
 		ContentToolbar,
 		CandidateTable,

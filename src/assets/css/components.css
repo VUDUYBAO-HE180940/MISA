@@ -167,10 +167,10 @@
 }
 
 .content__action__btn {
-    width: 42px;
-    height: 42px;
-    border: 1px solid #c6cad1;
-    border-radius: 8px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
     background-color: #fff;
     color: #6b7280;
     display: inline-flex;
@@ -178,11 +178,12 @@
     justify-content: center;
     cursor: pointer;
     padding: 0;
+    box-shadow: 0 1px 0 rgba(16,24,40,0.02);
 }
 
 .content__action__btn svg {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
 }
 
 .content__action__btn:hover {

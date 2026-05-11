@@ -5,6 +5,8 @@
 		:required="required"
 		:class="['ms-select', $attrs.class]"
 		@change="$emit('update:modelValue', $event.target.value)"
+			@blur="$emit('blur', $event.target.value)"
+			@focus="$emit('focus')"
 		v-bind="filteredAttrs"
 	>
 		<slot></slot>
@@ -29,7 +31,7 @@ export default {
 			default: false,
 		},
 	},
-	emits: ['update:modelValue'],
+	emits: ['update:modelValue', 'blur', 'focus'],
 	computed: {
 		filteredAttrs() {
 			const { class: className, ...rest } = this.$attrs;
@@ -41,10 +43,12 @@ export default {
 
 <style scoped>
 .ms-select {
-	padding: 10px 12px;
+	height: 36px;
+	padding: 0 12px;
 	border: 1px solid #d0d0d0;
-	border-radius: 4px;
+	border-radius: 8px;
 	font-size: 14px;
+	line-height: 1.4;
 	font-family: inherit;
 	width: 100%;
 	box-sizing: border-box;

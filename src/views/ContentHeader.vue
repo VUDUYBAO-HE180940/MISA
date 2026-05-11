@@ -8,7 +8,7 @@
 				<span class="btn__icon btn__icon--remove"></span>
 				<span>Xóa dữ liệu ứng viên không trúng tuyển</span>
 			</MsButton>
-			<MsButton variant="primary" class="content__btn__primary" @click="$emit('openForm')">
+			<MsButton variant="primary" class="content__btn__primary" @click="$emit('open-form')">
 				<span class="btn__icon btn__icon--plus">+</span>
 				<span>Thêm ứng viên</span>
 				<span class="btn__icon btn__icon--caret">&#9662;</span>
@@ -20,6 +20,6 @@
 <script>
 export default {
 	name: 'ContentHeader',
-	emits: ['openForm'],
+	emits: ['open-form'],
 };
 </script>

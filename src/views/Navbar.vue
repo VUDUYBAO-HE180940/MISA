@@ -2,7 +2,7 @@
 	<div class="navbar">
 		<div class="navbar__left">
 			<div class="navbar__left__bg">
-				<div class="navbar__left__icon__more"></div>
+				<div class="navbar__left__icon__more" @click="$emit('toggle-sidebar')"></div>
 				<div class="navbar__left__icon__logo"></div>
 				<div class="navbar__left__text">Tuyển dụng</div>
 			</div>
@@ -29,3 +29,4 @@
 		</div>
 	</div>
 </template>
+

@@ -1,44 +1,41 @@
 <template>
-	<div class="app">
-		<Navbar />
-		<Sidebar />
-		<div class="content">
-			<ContentHeader @openForm="isFormOpen = true" />
-			<ContentPanel>
-				<CandidateTable />
-			</ContentPanel>
-		</div>
-		<CandidateForm :isOpen="isFormOpen" @close="isFormOpen = false" @submit="handleFormSubmit" />
+	<div class="app" :class="{ 'sidebar--collapsed': isSidebarCollapsed }">
+		<Navbar :collapsed="isSidebarCollapsed" @toggle-sidebar="toggleSidebar" />
+		<Sidebar :collapsed="isSidebarCollapsed" @toggle-sidebar="toggleSidebar" />
+		<router-view />
 	</div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue';
-import Sidebar from './components/Sidebar.vue';
-import ContentHeader from './components/ContentHeader.vue';
-import ContentPanel from './components/ContentPanel.vue';
-import CandidateTable from './components/CandidateTable.vue';
-import CandidateForm from './components/CandidateForm.vue';
+import Navbar from './views/Navbar.vue';
+import Sidebar from './views/Sidebar.vue';
+
+const STORAGE_KEY = 'misa-sidebar-collapsed';
 
 export default {
 	name: 'App',
 	components: {
 		Navbar,
 		Sidebar,
-		ContentHeader,
-		ContentPanel,
-		CandidateTable,
-		CandidateForm,
 	},
 	data() {
 		return {
-			isFormOpen: false,
+			isSidebarCollapsed: false,
 		};
 	},
+	created() {
+		try {
+			this.isSidebarCollapsed = localStorage.getItem(STORAGE_KEY) === 'true';
+		} catch (e) {
+			this.isSidebarCollapsed = false;
+		}
+	},
 	methods: {
-		handleFormSubmit(formData) {
-			console.log('New candidate:', formData);
-			this.isFormOpen = false;
+		toggleSidebar() {
+			this.isSidebarCollapsed = !this.isSidebarCollapsed;
+			try {
+				localStorage.setItem(STORAGE_KEY, String(this.isSidebarCollapsed));
+			} catch (e) {}
 		},
 	},
 };

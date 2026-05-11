@@ -73,6 +73,15 @@
 					<div>Kiến thức hữu ích</div>
 				</div>
 			</div>
+
+			<div class="sidebar__footer">
+				<div class="sidebar__toggle" @click="$emit('toggle-sidebar')">
+					<div class="toggle__border">
+						<div class="sidebar__toggle__icon"></div>
+						<div class="sidebar__toggle__text">{{ collapsed ? 'Mở rộng' : 'Thu gọn' }}</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -80,6 +89,12 @@
 <script>
 export default {
 	name: 'Sidebar',
+	props: {
+		collapsed: {
+			type: Boolean,
+			default: false,
+		},
+	},
 	data() {
 		return {
 			activeMenu: 'candidates',
